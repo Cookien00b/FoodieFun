@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:foodieFun"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="foodieFun.IngredientWindow"
+        mc:Ignorable="d"
+        Title="Ingredient" Height="450" Width="800">
+    <Grid>
+
+        <TextBox x:Name="IngredientTxt" Height="25" Width="200" FontStyle="Italic" Foreground="#BF000000"/>
+        <ComboBox x:Name="preppingCmb" Height="25" Width="100" Margin="0,80,0,0" >
+            <ComboBoxItem Content="Dice"/>
+            <ComboBoxItem Content="Slice"/>
+            <ComboBoxItem Content="Mince"/>
+            <ComboBoxItem Content="Chop"/>
+        </ComboBox>
+        <Button Content="Add" Height="25" Width="40" Margin="0,150,125,0" Click="Add_Click" />
+        <Button Content="Cancel" Height="25" Width="70" Margin="125,150,0,0" Click="Cancel_Click" IsCancel="True"/>
+
+    </Grid>
+</Window>
