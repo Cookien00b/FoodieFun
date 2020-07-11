@@ -23,7 +23,7 @@ namespace foodieFun
     /// </summary>
     public partial class MainWindow : System.Windows.Window
     {
-        List<string> recipe = new List<string>();
+        List<ingredient> recipe = new List<ingredient>();
         public MainWindow()
         {
             
@@ -35,7 +35,7 @@ namespace foodieFun
         public class ingredient
         {
             public string Name { get; set; }
-            prepMethods[] methods { get; set; }
+            public prepMethods methods = new prepMethods() { method =  "", timeMult = 1m };
         }
 
         public static class Container
@@ -55,10 +55,7 @@ namespace foodieFun
             popup.Top = y;
             popup.ShowDialog();
             recipe.Clear();
-            foreach (var item in popup.temp)
-            {
-                recipe.Add(item.ToString());
-            }
+            recipe = popup.temp;
             ICollectionView view = CollectionViewSource.GetDefaultView(recipe);
             view.Refresh();
         }

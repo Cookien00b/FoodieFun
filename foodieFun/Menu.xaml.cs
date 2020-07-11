@@ -35,10 +35,7 @@ namespace foodieFun
             popup.Left = x;
             popup.Top = y;
             popup.ShowDialog();
-            foreach (var item in popup.temp)
-            {
-                temp.Add(item.ToString());
-            }
+            temp = popup.temp;
             this.Close();
         }
     }

@@ -51,7 +51,7 @@
             <Grid>
                 <ListView Name="ingredientsList" >
                     <ListView.Background>
-                        <ImageBrush ImageSource="file:///C:/Users/Brinks/source/repos/foodieFun/foodieFun/img/notebook.jpg" TileMode="FlipX" 
+                        <ImageBrush ImageSource="img/notebook.jpg" TileMode="FlipX" 
             Stretch="UniformToFill"
             AlignmentY="Top"
             Viewport="0,3,105,50.4"

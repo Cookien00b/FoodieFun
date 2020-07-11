@@ -27,13 +27,13 @@ namespace foodieFun
         public IngredientWindow()
         {
             InitializeComponent();
-            List<string> prepMethods 
+            
             
         }
 
         public void Add_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.Container.ingredients.Add(new MainWindow.ingredient() { Name = IngredientTxt.Text, prepMethod = preppingCmb.ToString() });
+            MainWindow.Container.ingredients.Add(new MainWindow.ingredient() { Name = IngredientTxt.Text, methods = { method = preppingCmb.ToString() } });
             temp = MainWindow.Container.ingredients;
             this.Close();
         }
